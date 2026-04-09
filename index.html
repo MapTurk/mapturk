@@ -1,4 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" id="Bundesrepublik_Deutschland" width="100%" height="100%" viewBox="0 0 591.504 800.504" overflow="visible" enable-background="new 0 0 591.504 800.504" xml:space="preserve" sodipodi:version="0.32" inkscape:version="0.44.1" sodipodi:docname="Karte_Deutschland.svg" sodipodi:docbase="C:\temp"><metadata id="metadata24"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MapTurk – Almanya Eyalet Haritası</title>
+<style>
+  :root {
+    --bg: #f5f5f3;
+    --line: #d9d9d3;
+    --text: #374151;
+    --muted: #6b7280;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); }
+  .page { min-height: 100vh; display:flex; flex-direction:column; }
+  .topbar { height: 92px; background:#f3f3f1; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:center; padding:0 28px; }
+  .topbar-inner { width:min(1200px, 100%); display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .brand { display:flex; align-items:center; gap:14px; }
+  .logo-box { width:48px; height:48px; border:2px dashed #94a3b8; border-radius:50%; display:grid; place-items:center; color:#94a3b8; font-size:11px; background:#fff; }
+  .brand-text { line-height:1.05; }
+  .brand-title { font-size:22px; font-weight:700; letter-spacing:0.02em; }
+  .brand-sub { font-size:11px; color:var(--muted); margin-top:4px; }
+  .nav { display:flex; align-items:center; gap:34px; flex-wrap:wrap; justify-content:flex-end; }
+  .nav a { text-decoration:none; color:#7b818a; font-size:15px; }
+  .nav a:hover { color:#111827; }
+  .content { flex:1; display:flex; align-items:center; justify-content:center; padding:18px 28px 10px; }
+  .map-wrap { width:min(1200px, 100%); height:100%; display:flex; align-items:flex-start; justify-content:center; }
+  .map-card { width:100%; max-width:1040px; aspect-ratio: 0.92; display:flex; align-items:center; justify-content:center; }
+  svg { width:100%; height:100%; overflow:visible; }
+  .state { cursor:pointer; transform-box: fill-box; transform-origin: center; transition: transform .18s ease, filter .18s ease, stroke-width .18s ease, opacity .18s ease; }
+  .state:hover { transform: translateY(-3px) scale(1.015); filter: drop-shadow(0 7px 10px rgba(15,23,42,.18)); stroke-width: 0.9 !important; }
+  #Schleswig-Holstein { fill:#dbeafe !important; }
+  #Hamburg { fill:#fde68a !important; }
+  #Bremen { fill:#fecdd3 !important; }
+  #Niedersachsen { fill:#d1fae5 !important; }
+  #Mecklenburg-Vorpommern { fill:#e9d5ff !important; }
+  #Brandenburg { fill:#bfdbfe !important; }
+  #Berlin { fill:#fbcfe8 !important; }
+  #Nordrhein-Westfalen { fill:#fde68a !important; }
+  #Hessen { fill:#fecaca !important; }
+  #Rheinland-Pfalz { fill:#fed7aa !important; }
+  #Saarland { fill:#c7d2fe !important; }
+  #Sachsen-Anhalt { fill:#ddd6fe !important; }
+  #Thüringen { fill:#fce7f3 !important; }
+  #Sachsen { fill:#bae6fd !important; }
+  #Baden__x26__Württemberg { fill:#bbf7d0 !important; }
+  #Bayern { fill:#f9d5e5 !important; }
+  .footer { height:48px; border-top:1px solid var(--line); background:#f3f3f1; display:flex; align-items:center; justify-content:center; padding:0 24px; }
+  .footer-inner { width:min(1200px, 100%); display:flex; align-items:center; justify-content:space-between; gap:16px; font-size:12px; color:#6b7280; }
+  @media (max-width: 900px) {
+    .topbar { height:auto; padding:16px 18px; }
+    .topbar-inner { flex-direction:column; align-items:flex-start; }
+    .nav { gap:16px; }
+    .content { padding:10px 14px 8px; }
+    .footer { height:auto; padding:10px 14px; }
+    .footer-inner { flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="logo-box">LOGO</div>
+        <div class="brand-text">
+          <div class="brand-title">MapTurk</div>
+          <div class="brand-sub">Almanya’daki Türk işletmeleri rehberi</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#">Hakkımızda</a>
+        <a href="#">Paketler</a>
+        <a href="#">İletişim</a>
+      </nav>
+    </div>
+  </header>
+  <main class="content">
+    <div class="map-wrap">
+      <div class="map-card">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" id="Bundesrepublik_Deutschland" width="100%" height="100%" viewBox="0 0 591.504 800.504" overflow="visible" enable-background="new 0 0 591.504 800.504" xml:space="preserve" sodipodi:version="0.32" inkscape:version="0.44.1" sodipodi:docname="Karte_Deutschland.svg" sodipodi:docbase="C:\temp"><metadata id="metadata24"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata>
 <sodipodi:namedview inkscape:window-height="1146" inkscape:window-width="1600" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" inkscape:zoom="0.93940815" inkscape:cx="-47.643609" inkscape:cy="481.74912" inkscape:window-x="-4" inkscape:window-y="-4" inkscape:current-layer="Bundesrepublik_Deutschland" />
 
 <style type="text/css"><![CDATA[
@@ -36,3 +117,15 @@
 <text x="365" y="632" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#111827" stroke="#ffffff" stroke-width="2" paint-order="stroke fill" style="pointer-events:none; user-select:none;">Bayern</text>
 <text x="197" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#111827" stroke="#ffffff" stroke-width="2" paint-order="stroke fill" style="pointer-events:none; user-select:none;">Baden-Württemberg</text>
 </g></g></svg>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© 2026 MapTurk. Tüm hakları saklıdır.</div>
+      <div>Gizlilik Politikası · Kullanım Şartları · Impressum</div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
