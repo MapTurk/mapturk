@@ -1,59 +1,176 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Mecklenburg-Vorpommern</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MapTurk – Mecklenburg-Vorpommern</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial;
-      background: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f3;
+      color: #1f2937;
+    }
+    header {
+      height: 88px;
+      border-bottom: 1px solid #e5e7eb;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(8px);
+    }
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .header-inner {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #22d3ee, #34d399);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 8px 18px rgba(15,23,42,.12);
+    }
+    .brand-text strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: -.02em;
+    }
+    .brand-text span {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px;
+      color: #6b7280;
+    }
+    .page {
+      min-height: calc(100vh - 88px);
+      padding: 28px 0 36px;
+    }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .toolbar h1 {
+      margin: 0;
+      font-size: 40px;
+      line-height: 1.05;
+      letter-spacing: -.03em;
+    }
+    .toolbar p {
+      margin: 8px 0 0;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .back {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 16px;
+      border: 1px solid #d1d5db;
+      background: white;
+      color: #111827;
+      font-size: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    }
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(15,23,42,.05);
+      overflow: hidden;
+    }
+    .map-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 640px;
+      background: linear-gradient(135deg, #f8fafc, #fff);
+      border: 1px solid #eef2f7;
+      border-radius: 22px;
+      padding: 16px;
+    }
+    .map-box svg {
+      width: 100%;
+      height: auto;
+      max-height: 760px;
+    }
+    .map-box svg polygon {
+      cursor: pointer;
+      transition: transform .18s ease, filter .18s ease, stroke-width .18s ease, opacity .18s ease;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .map-box svg polygon:hover {
+      transform: translateY(-4px) scale(1.018);
+      filter: brightness(1.08) drop-shadow(0 8px 10px rgba(15,23,42,.18));
+      stroke-width: 2.4 !important;
+      opacity: .98;
+    }
+    .map-box svg text, .map-box svg tspan {
+      pointer-events: none;
+      user-select: none;
+    }
+    .hint {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #6b7280;
       text-align: center;
     }
-
-    h1 {
-      margin: 20px;
-    }
-
-    svg {
-      width: 80%;
-      max-width: 900px;
-    }
-
-    /* TÜM ŞEHİRLER */
-    path {
-      fill: #a8c8e8;
-      stroke: #333;
-      stroke-width: 1;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    /* HOVER EFEKTİ */
-    path:hover {
-      transform: scale(1.05);
-      filter: brightness(1.2);
-      stroke-width: 2;
-    }
-
-    /* TEXT */
-    text {
-      font-size: 12px;
-      pointer-events: none;
-      fill: #000;
-    }
-
   </style>
 </head>
-
 <body>
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">M</div>
+        <div class="brand-text">
+          <strong>MapTurk</strong>
+          <span>Türk işletmeleri için harita rehberi</span>
+        </div>
+      </a>
+    </div>
+  </header>
 
-<h1>Mecklenburg-Vorpommern</h1>
+  <main class="page">
+    <div class="wrap">
+      <div class="toolbar">
+        <div>
+          <h1>Mecklenburg-Vorpommern</h1>
+          <p>İlçelerin üzerine gelince hafif kabarır. Sonraki adımda bunları tıklanabilir şehir / ilçe sayfalarına bağlarız.</p>
+        </div>
+        <a class="back" href="index.html">← Geri</a>
+      </div>
 
-<!-- SVG BURAYA -->
-<div>
- <svg
+      <div class="card">
+        <div class="map-box">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    version="1.0"
@@ -582,7 +699,10 @@
    id="polygon171" />
 		</g>
 	</svg>
-</div>
-
+        </div>
+        <div class="hint">Hover testi için haritadaki bölgelerin üzerine gel.</div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
