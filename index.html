@@ -89,6 +89,37 @@
     });
   });
 </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const statePages = {
+    "Baden__x26__Württemberg": "baden-wurttemberg.html",
+    "Bayern": "bayern.html",
+    "Berlin": "berlin.html",
+    "Brandenburg": "brandenburg.html",
+    "Bremen": "bremen.html",
+    "Hamburg": "hamburg.html",
+    "Hessen": "hessen.html",
+    "Mecklenburg-Vorpommern": "mecklenburg.html",
+    "Niedersachsen": "niedersachsen.html",
+    "Nordrhein-Westfalen": "nordrhein-westfalen.html",
+    "Rheinland-Pfalz": "rheinland-pfalz.html",
+    "Saarland": "saarland.html",
+    "Sachsen": "sachsen.html",
+    "Sachsen-Anhalt": "sachsen-anhalt.html",
+    "Schleswig-Holstein": "schleswig-holstein.html",
+    "Thüringen": "thueringen.html"
+  };
+
+  Object.keys(statePages).forEach(function (stateId) {
+    const el = document.getElementById(stateId);
+    if (el) {
+      el.addEventListener("click", function () {
+        window.location.href = statePages[stateId];
+      });
+    }
+  });
+});
+</script>
 <body>
 <div class="page">
   <header class="topbar">
