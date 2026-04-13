@@ -119,13 +119,26 @@
 </g></g></svg>
       </div>
     </div>
-  </main>
+   </main>
+
   <footer class="footer">
     <div class="footer-inner">
       <div>© 2026 MapTurk. Tüm hakları saklıdır.</div>
-      <div>Gizlilik Politikası · Kullanım Şartları · Impressum</div>
+      <div>Impressum · Datenschutz · Kontakt</div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const meck = document.getElementById("Mecklenburg-Vorpommern");
+
+      if (meck) {
+        meck.addEventListener("click", function () {
+          window.location.href = "mecklenburg.html";
+        });
+      }
+    });
+  </script>
 </div>
 </body>
 </html>
