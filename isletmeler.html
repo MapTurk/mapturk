@@ -1,1 +1,122 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İşletmeler - MapTurk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="/index.html" class="logo">
+        <img src="/images/mapturk-logo-160px.png" alt="MapTurk">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="/index.html">Ana Sayfa</a>
+        <a href="/hakkimizda.html">Hakkımızda</a>
+        <a href="/isletmeler.html">İşletmeler</a>
+        <a href="/iletisim.html">İletişim</a>
+        <a href="/giris.html" class="nav-btn">Giriş Yap</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container businesses-page">
+    <section class="page-hero">
+      <h1>Türk İşletmelerini Keşfet</h1>
+      <p>Şehrindeki restoranları, marketleri, kuaförleri, avukatları ve daha fazlasını tek yerde bul.</p>
+    </section>
+
+    <section class="filter-bar">
+      <input type="text" placeholder="İşletme adı veya kategori ara...">
+      <select>
+        <option>Şehir Seç</option>
+        <option>Berlin</option>
+        <option>Hamburg</option>
+        <option>Münih</option>
+        <option>Frankfurt</option>
+        <option>Köln</option>
+      </select>
+      <select>
+        <option>Kategori Seç</option>
+        <option>Restoran</option>
+        <option>Market</option>
+        <option>Kuaför</option>
+        <option>Danışmanlık</option>
+        <option>Oto Servis</option>
+      </select>
+      <button>Ara</button>
+    </section>
+
+    <section class="business-grid">
+      <div class="business-card">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop" alt="İşletme">
+        <div class="business-content">
+          <h3>Anadolu Restaurant</h3>
+          <p class="category">Restoran • Hamburg</p>
+          <p>Geleneksel Türk mutfağı, sıcak ortam ve aile dostu hizmet.</p>
+          <a href="#">Detayları Gör</a>
+        </div>
+      </div>
+
+      <div class="business-card">
+        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="İşletme">
+        <div class="business-content">
+          <h3>Berlin Türk Market</h3>
+          <p class="category">Market • Berlin</p>
+          <p>Taze ürünler, Türk markaları ve günlük ihtiyaçlar tek noktada.</p>
+          <a href="#">Detayları Gör</a>
+        </div>
+      </div>
+
+      <div class="business-card">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop" alt="İşletme">
+        <div class="business-content">
+          <h3>Elegant Hair Studio</h3>
+          <p class="category">Kuaför • Köln</p>
+          <p>Modern saç tasarımı, erkek ve kadın bakım hizmetleri.</p>
+          <a href="#">Detayları Gör</a>
+        </div>
+      </div>
+
+      <div class="business-card">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop" alt="İşletme">
+        <div class="business-content">
+          <h3>Yılmaz Rechtsberatung</h3>
+          <p class="category">Danışmanlık • Frankfurt</p>
+          <p>Oturum, iş hukuku ve resmi işlemler konusunda profesyonel destek.</p>
+          <a href="#">Detayları Gör</a>
+        </div>
+      </div>
+
+      <div class="business-card">
+        <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?q=80&w=1200&auto=format&fit=crop" alt="İşletme">
+        <div class="business-content">
+          <h3>Auto Service Demir</h3>
+          <p class="category">Oto Servis • Hannover</p>
+          <p>Bakım, onarım ve ekspertiz hizmetleri güvenilir ekiple.</p>
+          <a href="#">Detayları Gör</a>
+        </div>
+      </div>
+
+      <div class="business-card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="İşletme">
+        <div class="business-content">
+          <h3>Cafe Bosphorus</h3>
+          <p class="category">Cafe • Bremen</p>
+          <p>Kahve, tatlı ve samimi bir ortam arayanlar için ideal nokta.</p>
+          <a href="#">Detayları Gör</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
