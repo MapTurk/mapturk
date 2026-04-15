@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MapTurk – Almanya Eyalet Haritası</title>
+<title>MapTurk – Almanya Turk İşletmeler Haritası</title>
+  <link rel="stylesheet" href="style.css">
 <style>
   :root {
     --bg: #f5f5f3;
@@ -121,21 +122,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <body>
-<div class="page">
-  <header class="topbar">
-    <div class="topbar-inner">
-     <div class="brand">
-  <a href="index.html" class="brand-logo-link">
-    <img src="mapturk-logo.png" alt="MapTurk Logo" class="brand-logo">
-  </a>
-</div>
-      <nav class="nav">
-        <a href="#">Hakkımızda</a>
-        <a href="#">Paketler</a>
-        <a href="#">İletişim</a>
-      </nav>
-    </div>
+<header class="site-header">
+  <div class="container navbar">
+    <a href="/" class="logo">
+      <img src="images/mapturk-logo-160px.png" alt="MapTurk">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+      ☰
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="/">Ana Sayfa</a>
+      <a href="/hakkimizda">Hakkımızda</a>
+      <a href="/isletmeler">İşletmeler</a>
+      <a href="/iletisim">İletişim</a>
+      <a href="/giris" class="nav-btn">Giriş Yap</a>
+    </nav>
+  </div>
   </header>
+ <main>
+    <h1>MapTurk’a Hoş Geldiniz</h1>
+    <p>Buraya site içeriğin gelecek.</p>
+    <script src="script.js"></script>
+</body>
+</main>
   <main class="content">
     <div class="map-wrap">
       <div class="map-card">
